@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.android.myapplication.MainActivity">
+
+
+    <View
+        android:id="@+id/bigred"
+        android:layout_width="260dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:background="#cd3227" />
+
+    <View
+        android:id="@+id/smallwhite"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/bigred"
+        android:background="#e6e7e2" />
+
+    <View
+        android:id="@+id/bigwhite"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bigred"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#e6e7e2" />
+
+    <View
+        android:id="@+id/blue"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/smallwhite"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/bigwhite"
+        android:background="#055bcc" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/blue"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/bigwhite"
+        android:background="#e6e7e2" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:progressDrawable="@drawable/red_scrubber_primary_holo"
+        android:thumb="@drawable/red_scrubber_control_normal_holo"
+        android:max="255"
+        />
+
+</RelativeLayout>
